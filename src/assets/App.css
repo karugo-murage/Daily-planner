@@ -1,23 +1,31 @@
-
+.{
+  font-family: 'Courier New', Courier, monospace;
+}
 .header {
-  background-color: #4CAF50; /* Green background */
+  /* max-width: 800px auto; */
+  display: flex;
+  justify-content:space-around;
+  background-color: #7589e6; /* Green background */
   color: white; /* White text */
   padding: 20px; /* Padding around the header */
-  text-align: center; /* Center the text */
+  text-align: center; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .header-title {
+  /* border: 1px solid red; */
   font-size: 28px; /* Font size for the title */
   font-weight: bold; /* Make the title bold */
-  margin-bottom: 10px; /* Space below the title */
+  margin-bottom: 10px; 
 }
 
 .navigation {
+  /* border: 1px solid red; */
   list-style-type: none; /* Remove bullet points */
   padding: 0; /* Remove padding */
   display: flex; /* Flexbox for horizontal alignment */
   justify-content: center; /* Center the navigation items */
+  margin-bottom: 10px;
 }
 
 .nav-item {
@@ -28,7 +36,7 @@
 }
 
 .nav-item:hover {
-  color: #FFC107; /* Change color on hover */
+  color: #ff8b07; /* Change color on hover */
   text-decoration: underline; /* Underline on hover */
 }
 
