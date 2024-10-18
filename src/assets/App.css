@@ -1,38 +1,52 @@
-/* .App {
-  text-align: center;
+
+.header {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 20px; /* Padding around the header */
+  text-align: center; /* Center the text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-title {
+  font-size: 28px; /* Font size for the title */
+  font-weight: bold; /* Make the title bold */
+  margin-bottom: 10px; /* Space below the title */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navigation {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  display: flex; /* Flexbox for horizontal alignment */
+  justify-content: center; /* Center the navigation items */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-item {
+  margin: 0 20px; /* Space between navigation items */
+  font-size: 18px; /* Font size for navigation items */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: color 0.3s; /* Smooth color transition */
 }
 
-.App-link {
-  color: #61dafb;
+.nav-item:hover {
+  color: #FFC107; /* Change color on hover */
+  text-decoration: underline; /* Underline on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+.content {
+  padding: 40px; /* Padding for content area */
+  text-align: center; /* Center text */
+  background-color: #f9f9f9; /* Light gray background */
+  border-radius: 8px; /* Rounded corners */
+  margin: 20px; /* Margin around content */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.content h2 {
+  font-size: 24px; /* Font size for the main heading */
+  margin-bottom: 15px; /* Space below the heading */
+}
+
+.content p {
+  font-size: 16px; /* Font size for paragraph text */
+  color: #555; /* Dark gray color for text */
+}

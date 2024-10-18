@@ -1,5 +1,5 @@
 import React from "react";
-import './Home.css'; // Import the CSS file
+import '../assets/App.css'; 
 
 function Home() {
     return (
@@ -9,6 +9,7 @@ function Home() {
                 <ul className="navigation">
                     <li className="nav-item">My Tasks</li>
                     <li className="nav-item">Community</li>
+                    <li className="nav-item">SignUp</li>
                 </ul>
             </header>
             <div className="content">
