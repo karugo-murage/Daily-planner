@@ -1,5 +1,5 @@
-
 import React from "react";
+import './Home.css'; // Import the CSS file
 
 function Home() {
     return (
@@ -12,7 +12,8 @@ function Home() {
                 </ul>
             </header>
             <div className="content">
-                {/* Additional content can go here */}
+                <h2>Welcome to Your Productivity Dashboard!</h2>
+                <p>Here you can manage your tasks efficiently and connect with your community.</p>
             </div>
         </>
     );
