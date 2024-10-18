@@ -1,10 +1,9 @@
 import { useState } from "react";
-// import React {useState} from "react";
 
 function Home(){
 
     return(
-        <div>
+        <>
             <header>
                 <div>Productivity At Its Best</div>
                 <ul>
@@ -12,7 +11,11 @@ function Home(){
                     <li>Community</li>
                 </ul>
             </header>
-        </div>
+            <div>
+
+            </div>
+
+        </>
     )
 }
 
