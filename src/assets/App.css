@@ -1,5 +1,6 @@
-.{
+*{
   font-family: 'Courier New', Courier, monospace;
+  /* background-color: #ccc; */
 }
 .header {
   width: 60%;
@@ -29,15 +30,27 @@
   margin-bottom: 10px;
 }
 
-.nav-item {
-  margin: 0 20px; /* Space between navigation items */
-  font-size: 18px; /* Font size for navigation items */
+.nav-item button {
+  /* background-color: #ff8b07;
+
+  margin: 0 20px; 
+  padding: 2px;
+  font-size: 18px; 
+  cursor: pointer; 
+  transition: color 0.3s;  */
+  margin-left: 10px; /* Space between buttons */
+  padding: 5px 10px; /* Padding for buttons */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
   cursor: pointer; /* Pointer cursor on hover */
-  transition: color 0.3s; /* Smooth color transition */
+  transition: background-color 0.3s; 
+  background-color:#ff8b07;
+  color: white;
 }
 
-.nav-item:hover {
-  color: #ff8b07; /* Change color on hover */
+.nav-item button:hover {
+
+  background-color: #7589e6;
   /* text-decoration: Underline on hover */
 }
 
@@ -74,7 +87,7 @@
   border: 1px solid #ccc; /* Light border */
   border-radius: 8px; /* Rounded corners */
   margin: 10px 0; /* Space between tasks */
-  width: 50%; /* Width of the task item */
+  width: 60%; /* Width of the task item */
   display: flex; /* Flexbox for alignment */
   justify-content: space-between; /* Space between text and buttons */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -107,7 +120,7 @@
 }
 
 .complete-button {
-  background-color: #ff8b07; /* Green background for complete button */
+  background-color:#ff8b07; /* Green background for complete button */
   color: white; /* White text */
 }
 

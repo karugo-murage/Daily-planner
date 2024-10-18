@@ -14,9 +14,9 @@ function Home() {
             <header className="header">
                 <div className="header-title">Productivity At Its Best</div>
                 <ul className="navigation">
-                    <li className="nav-item">My Tasks</li>
-                    <li className="nav-item">Community</li>
-                    <li className="nav-item">SignUp</li>
+                    <li className="nav-item"><button>My Tasks</button></li>
+                    <li className="nav-item"><button>Community</button></li>
+                    <li className="nav-item"><button>SignUp</button></li>
                 </ul>
             </header>
             <div className="content">
