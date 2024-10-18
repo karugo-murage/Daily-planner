@@ -3,7 +3,9 @@ import React, { useState } from 'react';
 function Signup() {
   // State to store user input
   const [formData, setFormData] = useState({
-    name: '',
+    firstName: '',
+    lastName: '',
+    username: '',
     email: '',
     gender: '',
     password: '',
@@ -24,7 +26,7 @@ function Signup() {
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent page reload
-    console.log(formData); // Log the form data for now
+    console.log(formData); // Log form data for now
     setSubmitted(true); // Mark the form as submitted
   };
 
@@ -33,12 +35,36 @@ function Signup() {
       <h2>Sign Up</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="firstName">First Name:</label>
           <input
             type="text"
-            id="name"
-            name="name"
-            value={formData.name}
+            id="firstName"
+            name="firstName"
+            value={formData.firstName}
+            onChange={handleInputChange}
+            required
+          />
+        </div>
+
+        <div>
+          <label htmlFor="lastName">Last Name:</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            value={formData.lastName}
+            onChange={handleInputChange}
+            required
+          />
+        </div>
+
+        <div>
+          <label htmlFor="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            value={formData.username}
             onChange={handleInputChange}
             required
           />
@@ -90,7 +116,9 @@ function Signup() {
       {submitted && (
         <div className="success-message">
           <h3>Form Submitted Successfully!</h3>
-          <p>Thank you, {formData.name}. You have signed up with the email {formData.email}.</p>
+          <p>
+            Thank you, {formData.firstName} {formData.lastName}. You have signed up with the username "{formData.username}" and the email {formData.email}.
+          </p>
         </div>
       )}
     </div>
