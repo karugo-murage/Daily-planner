@@ -1,22 +1,21 @@
-import React, { useState } from "react";
 
-function Home(){
+import React from "react";
 
-    return(
+function Home() {
+    return (
         <>
-            <header>
-                <div>Productivity At Its Best</div>
-                <ul>
-                    <li>My_Tasks</li>
-                    <li>Community</li>
+            <header className="header">
+                <div className="header-title">Productivity At Its Best</div>
+                <ul className="navigation">
+                    <li className="nav-item">My Tasks</li>
+                    <li className="nav-item">Community</li>
                 </ul>
             </header>
-            <div>
-
+            <div className="content">
+                {/* Additional content can go here */}
             </div>
-
         </>
-    )
+    );
 }
 
-export default Home ;
+export default Home;
