@@ -1,4 +1,5 @@
 import React from "react";
+// import { Link } from "react-router-dom";
 import '../assets/App.css'; 
 
 function Home() {
@@ -17,6 +18,7 @@ function Home() {
                     <li className="nav-item"><button>My Tasks</button></li>
                     <li className="nav-item"><button>Community</button></li>
                     <li className="nav-item"><button>SignUp</button></li>
+                    <li className="nav-item"><button>Sign Up</button> </li>
                 </ul>
             </header>
             <div className="content">
