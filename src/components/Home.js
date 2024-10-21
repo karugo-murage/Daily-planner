@@ -1,6 +1,6 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-import '../assets/App.css'; 
+import '../assets/index.css'; 
 
 function Home() {
     const tasks = [
@@ -23,7 +23,7 @@ function Home() {
             </header>
             <div className="content">
                 <h2>Welcome to Your Productivity Dashboard!</h2>
-                <p>Here you can manage your tasks efficiently and connect with your community.</p>
+                <p>Here you can manage your tasks efficiently and connect with our community.</p>
             </div>
             <div className="task-list">
                     {tasks.map((task) => (
