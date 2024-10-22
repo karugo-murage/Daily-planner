@@ -4,12 +4,14 @@ import Home from './components/Home';
 import SignPage from './components/SignPage';
 // import './assets/App.css';
 import './assets/index.css';
+import Tasks from "./components/Tasks";
 
 function App() {
     return (
         <>
             <Home/>
             <SignPage/>
+            <Tasks/>
         </>
         // <Router>
         //     <div>
