@@ -1,7 +1,19 @@
 {
-    "tasks": [
-      { "id": 1, "task": "Hit the Gym 💪", "completed": false },
-      { "id": 2, "task": "Read the Bible 📖", "completed": false },
-      { "id": 3, "task": "Study Redux state management 💻", "completed": false }
-    ]
-  }
+  "tasks": [
+    {
+      "id": "1",
+      "task": "Hit the Gym 💪",
+      "completed": false
+    },
+    {
+      "id": "2",
+      "task": "Read the Bible 📖",
+      "completed": false
+    },
+    {
+      "id": "3",
+      "task": "Study Redux state management 💻",
+      "completed": false
+    }
+  ]
+}

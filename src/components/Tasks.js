@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import '../assets/index.css';
 
 const Tasks = () => {
-  const [tasks, setTasks] = useState([]);  // State to hold tasks
-  const [newTask, setNewTask] = useState('');  // State to handle new task input
-  const [editTaskId, setEditTaskId] = useState(null);  // State for editing
-  const [editedTask, setEditedTask] = useState('');  // Edited task input
+  const [tasks, setTasks] = useState([]);
+  const [newTask, setNewTask] = useState('');
+  const [editTaskId, setEditTaskId] = useState(null);
+  const [editedTask, setEditedTask] = useState('');
 
-  // Fetch tasks from mock JSON database (useEffect runs on mount)
   useEffect(() => {
     fetchTasks();
   }, []);
@@ -17,7 +17,6 @@ const Tasks = () => {
     setTasks(data);
   };
 
-  // Add a new task
   const addTask = async () => {
     const newTaskObj = { task: newTask, completed: false };
     const response = await fetch('http://localhost:5000/tasks', {
@@ -26,11 +25,10 @@ const Tasks = () => {
       body: JSON.stringify(newTaskObj),
     });
     const data = await response.json();
-    setTasks([...tasks, data]);  // Update task list
-    setNewTask('');  // Clear input field
+    setTasks([...tasks, data]);
+    setNewTask('');
   };
 
-  // Edit an existing task
   const editTask = async (id) => {
     const updatedTask = { ...tasks.find(task => task.id === id), task: editedTask };
     const response = await fetch(`http://localhost:5000/tasks/${id}`, {
@@ -39,25 +37,22 @@ const Tasks = () => {
       body: JSON.stringify(updatedTask),
     });
     const data = await response.json();
-    setTasks(tasks.map(task => task.id === id ? data : task));  // Update task list
-    setEditTaskId(null);  // Close edit mode
-    setEditedTask('');  // Clear edit input
+    setTasks(tasks.map(task => task.id === id ? data : task));
+    setEditTaskId(null);
+    setEditedTask('');
   };
 
-  // Delete or mark a task as completed
   const completeTask = async (id) => {
     await fetch(`http://localhost:5000/tasks/${id}`, { method: 'DELETE' });
-    setTasks(tasks.filter(task => task.id !== id));  // Remove task from list
+    setTasks(tasks.filter(task => task.id !== id));
   };
 
   return (
-    <div>
-      <h2>Tasks</h2>
-
-      {/* Display Task List */}
-      <ul>
+    <>
+      <h2 className='tasks-head'>Tasks</h2>
+      <div className="task-list">
         {tasks.map((task) => (
-          <li key={task.id}>
+          <div key={task.id} className="task-item">
             {editTaskId === task.id ? (
               <>
                 <input
@@ -66,34 +61,37 @@ const Tasks = () => {
                   onChange={(e) => setEditedTask(e.target.value)}
                   placeholder={task.task}
                 />
-                <button onClick={() => editTask(task.id)}>Save</button>
+                <button onClick={() => editTask(task.id)} className="edit-button">Save</button>
               </>
             ) : (
               <>
-                <span style={{ textDecoration: task.completed ? 'line-through' : 'none' }}>
-                  {task.task}
-                </span>
-                <button onClick={() => { setEditTaskId(task.id); setEditedTask(task.task); }}>
-                  Edit
-                </button>
-                <button onClick={() => completeTask(task.id)}>
-                  Complete
-                </button>
+                <span className="task-text">{task.task}</span>
+                <div className="task-buttons">
+                  <button onClick={() => { setEditTaskId(task.id); setEditedTask(task.task); }} className="edit-button">
+                    Edit
+                  </button>
+                  <button onClick={() => completeTask(task.id)} className="complete-button">
+                    Complete
+                  </button>
+                </div>
               </>
             )}
-          </li>
+          </div>
         ))}
-      </ul>
-       {/* Add Task Section */}
-       <input
+      </div>
+      <div className='addtask'>
+      <input
         type="text"
         value={newTask}
         onChange={(e) => setNewTask(e.target.value)}
         placeholder="New Task"
       />
       <button onClick={addTask}>Add Task</button>
-    </div>
+      </div>
+
+    </>
   );
 };
 
 export default Tasks;
+
