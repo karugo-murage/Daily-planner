@@ -5,6 +5,7 @@ import SignPage from './components/SignPage';
 // import './assets/App.css';
 import './assets/index.css';
 import Tasks from "./components/Tasks";
+import Community from "./components/Community";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Home/>
             <SignPage/>
             <Tasks/>
+            <Community/>
         </>
         // <Router>
         //     <div>

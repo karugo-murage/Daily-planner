@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../assets/index.css';
 
-const Tasks = () => {
+function Tasks(){
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState('');
   const [editTaskId, setEditTaskId] = useState(null);
