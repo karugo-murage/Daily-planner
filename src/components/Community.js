@@ -14,7 +14,7 @@ function Community(){
 
   return (
     <div className="community-container">
-      <h2>Support Our Community</h2>
+      <h2 className='communityheader'>Support Our Community</h2>
 
       {/* Donation Section */}
       <div className="donation-section">
