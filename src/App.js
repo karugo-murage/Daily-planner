@@ -8,21 +8,14 @@ import './assets/index.css';
 
 function App() {
     return (
-        <>
-            <Home/>
-            <SignPage/>
-            <Tasks/>
-            <Community/>
             <Router>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/signpage" element={<SignPage />} />
                     <Route path="/tasks" element={<Tasks/>} />
                     <Route path="/community" element={<Community/>} />
-                {/* Add more routes as needed */}
                 </Routes>
             </Router>
-        </>
     );
 }
 

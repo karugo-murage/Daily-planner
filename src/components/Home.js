@@ -1,5 +1,6 @@
 import React from "react";
 // import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import '../assets/index.css'; 
 
 function Home() {
@@ -15,9 +16,9 @@ function Home() {
             <header className="header">
                 <div className="header-title">Productivity At Its Best</div>
                 <ul className="navigation">
-                    <li className="nav-item"><button>My Tasks</button></li>
-                    <li className="nav-item"><button>Community</button></li>
-                    <li className="nav-item"><button>Sign Up</button> </li>
+                    <li className="nav-item"><Link to="/tasks"><button>My Tasks</button></Link></li>
+                    <li className="nav-item"><Link to="/community"><button>Community</button></Link></li>
+                    <li className="nav-item"><Link to="/signpage"><button>Sign Up</button></Link></li>
                 </ul>
             </header>
             <div className="content">
