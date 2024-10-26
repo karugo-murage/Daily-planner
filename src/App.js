@@ -13,6 +13,7 @@ function App() {
             <header className="header">
                 <div className="header-title">Productivity At Its Best</div>
                 <ul className="navigation">
+                <li className="nav-item"><Link to="/"><button>Home</button></Link></li>
                     <li className="nav-item"><Link to="/tasks"><button>My Tasks</button></Link></li>
                     <li className="nav-item"><Link to="/community"><button>Community</button></Link></li>
                     <li className="nav-item"><Link to="/signpage"><button>Sign Up</button></Link></li>
@@ -24,6 +25,9 @@ function App() {
                 <Route path="/tasks" element={<Tasks/>} />
                 <Route path="/community" element={<Community/>} />
             </Routes>
+            <footer className="sticky-footer">
+                <div>"Yesterday you said today, JUST DO IT"</div>
+            </footer>
         </Router>
     );
 }
