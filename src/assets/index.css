@@ -38,7 +38,6 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
-  /* gap: 1em; */
 }
 
 .nav-item button {
@@ -48,13 +47,12 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
-  background-color: #ffdd57; /* Yellow background */
-  color: black; /* Black text */
-  /* font-size: 0.5em; */
+  background-color: #ffdd57; 
+  color: black; 
 }
 
 .nav-item button:hover {
-  background-color: #28a745; /* Green on hover */
+  background-color: #28a745; 
   color: white;
 }
 
@@ -162,7 +160,7 @@ body {
 }
 
 .auth-form-container h2 {
-  color: #28a745; /* Green text */
+  color: #28a745; 
 }
 
 .auth-form-container form div {
@@ -189,14 +187,14 @@ body {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #ffdd57; /* Yellow button */
+  background-color: #ffdd57; 
   color: black;
   cursor: pointer;
   margin-top: 10px;
 }
 
 .auth-form-container button:hover {
-  background-color: #28a745; /* Green on hover */
+  background-color: #28a745; 
   color: white;
 }
 
@@ -241,13 +239,13 @@ body {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #ffdd57; /* Yellow button */
+  background-color: #ffdd57; 
   color: black;
   cursor: pointer;
 }
 
 .addtask button:hover {
-  background-color: #28a745; /* Green on hover */
+  background-color: #28a745;
   color: white;
 }
 
@@ -281,7 +279,7 @@ body {
 
 .donation-button {
   padding: 10px 20px;
-  background-color: #28a745; /* Green */
+  background-color: #28a745; 
   color: white;
   border: none;
   border-radius: 5px;
@@ -290,8 +288,8 @@ body {
 }
 
 .donation-button:hover {
-  background-color: #ffdd57; /* Yellow on hover */
-  color: black; /* Black text on hover */
+  background-color: #ffdd57; 
+  color: black; 
 }
 
 .qr-section {
