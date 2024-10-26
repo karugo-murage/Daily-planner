@@ -1,10 +1,10 @@
 import React from "react";
-// import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom"; // Updated import
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from './components/Home';
 import SignPage from './components/SignPage';
-import './assets/index.css';
 import Tasks from "./components/Tasks";
 import Community from "./components/Community";
+import './assets/index.css';
 
 function App() {
     return (
@@ -13,6 +13,15 @@ function App() {
             <SignPage/>
             <Tasks/>
             <Community/>
+            <Router>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/signpage" element={<SignPage />} />
+                    <Route path="/tasks" element={<Tasks/>} />
+                    <Route path="/community" element={<Community/>} />
+                {/* Add more routes as needed */}
+                </Routes>
+            </Router>
         </>
     );
 }

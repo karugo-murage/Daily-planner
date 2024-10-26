@@ -35,8 +35,8 @@ function Community(){
       <div className="qr-section">
         <h3>Join Our Telegram Channel</h3>
         <QRCodeCanvas
-             value="https://t.me/your-telegram-channel"  // URL for your Telegram channel
-             size={150}  // Set the size of the QR code
+             value="https://t.me/smart001trader" 
+             size={150}
              className="qr-code"
         />
         <p>Scan the QR code to join our Telegram community!</p>

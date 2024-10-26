@@ -17,7 +17,6 @@ function Home() {
                 <ul className="navigation">
                     <li className="nav-item"><button>My Tasks</button></li>
                     <li className="nav-item"><button>Community</button></li>
-                    {/* <li className="nav-item"><button>SignUp</button></li> */}
                     <li className="nav-item"><button>Sign Up</button> </li>
                 </ul>
             </header>
