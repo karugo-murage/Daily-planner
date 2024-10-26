@@ -11,22 +11,26 @@ body {
 
 /* Header */
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
   width: 60%;
   margin: 0 auto;
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
-  background-color:#28a745; /* Consistent blue background */
+  background-color:#28a745; 
   color: white;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header-title {
-  font-size: 28px;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin: 0.5rem;
 }
 
 .navigation {
@@ -34,6 +38,7 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
+  gap: 1em;
 }
 
 .nav-item button {
@@ -45,6 +50,7 @@ body {
   transition: background-color 0.3s;
   background-color: #ffdd57; /* Yellow background */
   color: black; /* Black text */
+  font-size: 1em;
 }
 
 .nav-item button:hover {
